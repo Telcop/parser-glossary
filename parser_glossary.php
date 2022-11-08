@@ -11,12 +11,6 @@ header('Content-type: text/html; charset=utf-8');
 // устанавливаем московское время
 date_default_timezone_set("Europe/Moscow");
 
-
-// function locTimeString()
-// {
-// 	return (new DateTime("now", new DateTimeZone(ini_get('date.timezone'))))->format('Y-m-d H:i:s');
-// }
-
 /* Загрузка страницы при помощи cURL */
 function curl_get_contents($page_url, $base_url, $pause_time = 0, $retry = 0)
 {
